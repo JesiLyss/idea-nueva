@@ -21,7 +21,7 @@
 
             <img src="./image/free-30-instagram-stories-icons10_122557 (1).png">
         </div>
-        
+
         <nav>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -168,6 +168,17 @@
 
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navList = document.querySelector('.nav-list');
+    
+            menuToggle.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
