@@ -21,8 +21,13 @@
             <img src="./image/free-30-instagram-stories-icons10_122557 (1).png">
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="index.html">Facttstore</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -122,13 +127,13 @@
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.querySelector('.menu-toggle');
             const navList = document.querySelector('.nav-list');
-    
+
             menuToggle.addEventListener('click', () => {
                 navList.classList.toggle('active');
             });
         });
     </script>
-    
+
 </body>
 
 </html>
